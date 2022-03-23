@@ -1,6 +1,6 @@
-from sklearn.metrics import classification_report,accuracy_score,confusion_matrix
 import numpy as np
 import pandas as pd
+from sklearn.preprocessing import normalize
 
 train = np.asarray(pd.read_csv('20PercentTrainingSet.csv',header=None))
 test = np.asarray(pd.read_csv('KDDTest+.csv',header=None))
