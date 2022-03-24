@@ -29,6 +29,8 @@ threshold = 90, FPR: 0.046, TPR: 0.21, F1: 0.51
 threshold = 100, FPR: 0.041, TPR: 0.195, F1: 0.48
 AUC for this ROC: 0.11898650000000001
 ```
+Below is the ROC curve for our anomaly detection algorithm.
+![Anomaly ROC Curve](AnomalyDetectionROC.png)
 
 We also find the F1 score for each threshold. The F1 score is a solid measure when both FPR and TPR need to be checked. In this case, we do not only want to rely on FPR to measure our performance because then, to have a "perfect" model, we could just classify everything as negative and never return a false positive. In contrast, we could also classify everything as positive if we only measured our TPR, because we would never return anything that wasn't positive, and every positive would be correctly identified.
 
