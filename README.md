@@ -51,7 +51,7 @@ binary, k=17, FPR: 0.013, TPR: 0.37, F1: 0.78
 binary, k=19, FPR: 0.013, TPR: 0.368, F1: 0.77
 AUC for this ROC: 0.0
 ```
-Below is the ROC curve for our anomaly detection algorithm.
+Below is the ROC curve for our misuse detection algorithm. Notice how it looks like a vertical line. This is because our FPR for all binary classifiers is consistently .013. For this reason, the Area Under the Curve is also 0.
 ![Binary Misuse ROC Curve](MisuseDetectionROC.png)
 
 Then, we do the same thing for multiclass classifiers. The same 10 k were used. The class labels now included normal, DoS, Probe, U2R, and R2L instances. The FPR and TPR are printed for each classifier multiclass labels, as well as the confusion matrices for each of the 10 multiclass classifiers. This information is printed below.
